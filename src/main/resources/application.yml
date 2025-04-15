@@ -1,0 +1,27 @@
+
+#server:
+#  port: 8090
+web:
+  auth:
+      csdnCookie: ${CSDN_COOKIE:}
+      juejinCookie: ${JUEJIN_COOKIE:}
+      cnblogCookie: ${CNBLOG_COOKIE:}
+      cnblogToken: ${CNBLOG_TOKEN:}
+
+
+spring:
+  application:
+    name: mcp-server
+  main:
+    web-application-type: none
+    banner-mode: off
+  # 默认 dev 环境
+#  profiles:
+#    active: dev
+  ai:
+    mcp:
+      server:
+        stdio: true # 启用stdio模式
+        name: mcp-server
+        version: 0.0.1
+
